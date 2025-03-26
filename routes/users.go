@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"myproject/models"
 	"myproject/utils"
-
+	"log"
 	"github.com/gin-gonic/gin"
 )
 
@@ -14,6 +14,7 @@ func SignUp(context *gin.Context){
 	err := context.ShouldBindJSON(&user)
 
 	if err != nil {
+		log.Println("Error parsing request data:", err)
 		context.JSON(http.StatusBadRequest, gin.H{"message": "Could not parse request data."})
 		return
 	}
