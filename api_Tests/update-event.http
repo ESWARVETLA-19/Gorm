@@ -1,0 +1,9 @@
+PUT http://localhost:8080/events/1
+content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsImV4cCI6MTc0Mjk2MjA3NywidXNlcklkIjoxfQ.jwV_0TzXT8X-N5qy5uRTGScweGOF6CrSxTDk98FsVVU
+{
+  "name": "Tech Conference 2025",
+  "description": "A conference focusing on the latest technology trends.",
+  "location": "San Francisco, CA",
+  "date_time": "2025-06-15T09:00:00Z"
+}
